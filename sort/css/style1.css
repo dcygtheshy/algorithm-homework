@@ -1,0 +1,118 @@
+/* 
+COLOLRS: 
+Dark Background: #121212;
+Medium Container: #181818;
+
+Lightest, text: #b3b3b3;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Verdana';
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    width: 50px;
+    height: 25px;
+    font-size: 16px;
+    padding: 0.5em 0 0 5px;
+    text-align: left;
+    background:transparent;
+    color:#ffffff; 
+    border: none;
+    border-bottom: 1px solid #585858;
+    /* border-radius: 5px; */
+    /*-moz-appearance: textfield;*/
+  }
+  
+  
+  input[type=button], input[type=submit] {
+    min-width: 70px;
+    height: 35px;
+    padding: 0 1.2em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1F1F1F;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none; 
+  }
+  
+  input[type="button"]:hover {
+    background-color: #1F1F1F;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4), 0px -5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1F1F1F;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2), 0px -5px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+  }
+  
+  
+  header {
+    background: #34495e;
+    color:#ffffff; 
+    height: 100px;
+  }
+  
+  header > ul {
+    height: 100px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: middle;
+   
+    align-items: center;
+  }
+  
+  ul > li {
+    padding: 1em 2em;
+  
+  }
+  
+  .container{
+      background: #e6e6e6;
+      display:block;
+      height: calc(100vh - 100px);
+      padding: 2em;
+  }
+  
+  .array-container{
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+  }
+  .array-bar { 
+    width:100%;
+      background: #b577e7;
+      align-self:flex-end;
+      text-align: center;
+      border: 3px solid #e6e6e6;
+  }
