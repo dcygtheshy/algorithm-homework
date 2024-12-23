@@ -12,6 +12,34 @@ Lightest, text: #b3b3b3;
     padding: 0;
     box-sizing: border-box;
   }
+    /* 导航栏链接样式 */
+  .nav-link {
+    color: white; /* 链接文字颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    font-size: 16px; /* 字体大小 */
+    font-weight: bold; /* 字体加粗 */
+    padding: 5px 10px; /* 内边距 */
+    transition: background-color 0.3s ease, color 0.3s ease; /* 平滑过渡效果 */
+  }
+  .nav-link:hover {
+    color: #282828; /* 悬停时文字颜色 */
+    background-color: white; /* 悬停时背景颜色 */
+    border-radius: 5px; /* 添加圆角效果 */
+  }
+    /* 调整导航栏的背景色 */
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* 每个链接之间的间距 */
+    background-color: #6c6363a9; /* 导航栏背景色 */
+    padding: 10px;
+  }
+
+  header li {
+    display: inline;
+  }
+
+
   body {
     font-family: 'Verdana';
     text-transform: uppercase;
@@ -115,4 +143,5 @@ Lightest, text: #b3b3b3;
       align-self:flex-end;
       text-align: center;
       border: 3px solid #e6e6e6;
+  
   }

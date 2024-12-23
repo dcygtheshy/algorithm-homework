@@ -1,3 +1,16 @@
+<?php
+session_start();
+$username = htmlspecialchars($_SESSION['username']);
+$userid = htmlspecialchars($_SESSION['userid']);
+// if (isset($_SESSION['username']) && isset($_SESSION['userid'])) {
+//     $username = htmlspecialchars($_SESSION['username']);
+//     $userid = htmlspecialchars($_SESSION['userid']);
+// } else {
+//     // 如果用户未登录，重定向到登录页面
+//     header('Location: login.php');
+//     exit();
+// }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +26,7 @@
     <header>
       <ul>
         <!-- <li>Logo/Name</li> -->
+        <li>Welcome, <?php echo "学员：$username"; ?> (ID: <?php echo $userid; ?>)</li>
         <li>
             <label for="arraySize">Array Size:</label>
             <input type="number" value="100"/>
@@ -29,6 +43,9 @@
             <label for="submit"></label>
             <input type="submit" value="Go" />
         </li> -->
+        <li>
+            <a href="history_list.php" class="nav-link">历史记录</a>
+        </li>
       </ul>
     </header>
     <div class="container">

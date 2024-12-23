@@ -14,7 +14,7 @@ if (mysqli_connect_errno())
     echo "连接 MySQL 失败: " . mysqli_connect_error();
 } 
 
-echo '连接成功';
+//echo '连接成功';
 
 // 在此处编写您的数据库操作代码
 
