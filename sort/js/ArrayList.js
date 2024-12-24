@@ -33,11 +33,11 @@ class ArrayList extends Array {
         this[b].setValue();
     }
 
-    async swapBar(a, b) {
+    async swapBar(a, b,time) {
         this[a].setBarColor("#802B9E");
         this[b].setBarColor("#802B9E");
         this.swapNodes(a, b);
-        await sleep(1000);
+        await sleep(time);
         this[a].setBarColor("#C242F0");
         this[b].setBarColor("#C242F0");
     }

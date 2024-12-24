@@ -55,7 +55,7 @@ function generateComplexityCurve() {
     currentIndex++;
 
     // 每隔50毫秒绘制下一个点
-    setTimeout(drawPoint, 50);
+    setTimeout(drawPoint, 88);
   }
 
   // 连接所有的点，绘制直线

@@ -28,12 +28,12 @@ async function partition(arr, left, right) {
     for(let i = left; i < right; i++) {
         if(arr[i].val < pivotValue) {
             await arr.setPivot(pivotIndex, '#a0a0a0');
-            arr.swapBar(i, pivotIndex);
+            arr.swapBar(i, pivotIndex,1000);
             pivotIndex++;
         }
     }
     
-    arr.swapBar(pivotIndex, right);
+    arr.swapBar(pivotIndex, right,1000);
     return pivotIndex;
 }
 
@@ -48,7 +48,7 @@ async function insertionSort(arr, n) {
 
     while( j >= 0 ) {    
         if(arr[j].val > last)
-            await arr.swapBar(j, j+1);
+            await arr.swapBar(j, j+1,100);
         //arr[j+1] = arr[j];
         j--;
     }
