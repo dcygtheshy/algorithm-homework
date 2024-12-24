@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style1.css" />
+  <title>Sorting Time Complexity Visualization</title>
+</head>
+<body>
+  <header>
+    <ul>
+      <li>
+        <label for="arraySize">Array Size:</label>
+        <input type="number" id="numPoints" value="10" min="1" max="100" />
+      </li>
+
+      <li>
+        <label for="algorithm">Select a sort:</label>
+        <select id="algorithm">
+          <option value="bubbleSort">Bubble Sort</option>
+          <option value="quickSort">Quick Sort</option>
+          <option value="mergeSort">Merge Sort</option>
+        </select>
+      </li>
+
+      <li>
+        <input type="button" id="generateBtn" value="Generate Complexity Curve">
+      </li>
+    </ul>
+  </header>
+
+  <div class="container">
+    <div class="complex-container" id="complex-container">
+      <canvas id="complexCanvas"></canvas>
+    </div>
+  </div>
+
+  <script src="../js/complexity.js"></script>
+</body>
+</html>

@@ -46,6 +46,9 @@ $userid = htmlspecialchars($_SESSION['userid']);
         <li>
             <a href="history_list.php" class="nav-link">历史记录</a>
         </li>
+        <li>
+          <input type="button" class="sort-btn" value="Complex Analysis" name="complex" onclick="window.location.href='view/complex.html'"/>
+        </li>
       </ul>
     </header>
     <div class="container">
